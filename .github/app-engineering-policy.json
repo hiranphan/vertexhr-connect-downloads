@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "policy_id": "backend-capability-compatibility-release-gate",
+  "policy_version": "1.0",
+  "repository": "hiranphan/vertexhr-connect-downloads",
+  "enforcement": "required",
+  "inventory_status": "bootstrap_enforced",
+  "tracking": "hiranphan/linda-platform-ops#10",
+  "rules": {
+    "critical_dependency_registration": true,
+    "live_production_preflight": true,
+    "partial_capability": "hard_stop",
+    "missing_capability_fallback": "explicit_only",
+    "unknown_errors": "fail_closed",
+    "mutating_automation_uncertain_authority": "fail_closed_or_skip_safely",
+    "exact_source_candidate": true,
+    "postflight_and_rollback": true
+  }
+}

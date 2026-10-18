@@ -1,0 +1,11 @@
+name: App Engineering Policy
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  policy:
+    uses: hiranphan/linda-platform-ops/.github/workflows/app-engineering-policy-core.yml@707a43d15cc25911a8e726f269a49a6e4a9c3631
